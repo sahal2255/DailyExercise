@@ -1,0 +1,92 @@
+ Implement a function that takes two sorted arrays and merges them into a single sorted array without using any built-in sorting functions. 
+
+
+
+ function mergeSortedArrays(arr1, arr2) { 
+
+  return […arr1, …arr2].sort((a, b) => a – b); 
+
+}
+
+
+
+
+
+Create a JavaScript function that returns the Fibonacci sequence up to a given number, utilizing memoization for optimized performance. 
+
+
+
+function fibonacciWithMemoization(n) { 
+
+  let memo = [0, 1]; 
+
+  for (let i = 2; i <= n; i++) { 
+
+    memo[i] = memo[i – 1] + memo[i – 2]; 
+
+  } 
+
+  return memo; 
+
+} 
+
+
+
+
+
+Implement a function to reverse a string without using the built-in reverse() method. 
+
+
+
+function reverseString(str) { 
+
+  let reversed = ”; 
+
+  for (let i = str.length – 1; i >= 0; i–) { 
+
+    reversed += str[i]; 
+
+  } 
+
+  return reversed; 
+
+} 
+
+
+
+ Given an array of numbers, write a function to find the largest and smallest numbers in the array. 
+
+function findMinMax(arr) { 
+
+  let min = Math.min(…arr); 
+
+  let max = Math.max(…arr); 
+
+  return [min, max]; 
+
+}
+
+
+
+Implement a function to remove duplicates from an array. 
+
+function removeDuplicates(arr) { 
+
+  return Array.from(new Set(arr)); 
+
+}
+
+
+
+Write a function that sorts an array of numbers in ascending order. 
+
+function ascendingSort(numbers) { 
+
+  return numbers.sort((a, b) => a – b); 
+
+}
+
+
+
+
+crete 

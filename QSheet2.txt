@@ -1,0 +1,31 @@
+const promise= new Promise((resolve,reject)=>{
+    let x=10
+    if(x===10){
+        resolve ('Success')
+    }
+    else{
+        reject ('failed')
+    }
+})
+promise.then((result)=>{
+    console.log(result);
+}).catch((error)=>{
+    console.log(error)
+})
+
+
+
+
+
+
+
+
+function one(){
+    console.log('started');
+}
+async function two(){
+    console.log('pending');
+    const result = await one()
+    console.log('success');
+}
+two()
